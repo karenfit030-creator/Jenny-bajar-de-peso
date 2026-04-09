@@ -16,15 +16,8 @@
   body{background:var(--black);color:var(--white);font-family:"Montserrat",sans-serif;overflow-x:hidden;}
 
   /* HERO */
-  .hero{
-    position:relative;width:100%;
-    aspect-ratio:16/9;
-    min-height:220px;
-    overflow:hidden;
-  }
-  .hero-bg{
-    width:100%;height:100%;object-fit:cover;display:block;
-  }
+  .hero{position:relative;width:100%;overflow:hidden;}
+  .hero-bg{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;}
   .hero-wa{
     position:absolute;bottom:16px;left:50%;transform:translateX(-50%);
     display:inline-flex;align-items:center;gap:8px;
@@ -41,22 +34,10 @@
   .hero-wa svg{width:18px;height:18px;fill:#fff;}
 
   /* PERFIL */
-  .profile-section{
-    background:var(--dark);padding:36px 20px;
-    border-bottom:1px solid rgba(124,58,237,0.3);
-  }
-  .profile-title{
-    font-family:"Bebas Neue",sans-serif;font-size:clamp(22px,6vw,36px);
-    letter-spacing:6px;color:var(--purple-light);text-align:center;margin-bottom:20px;
-  }
-  .profile-grid{
-    display:grid;grid-template-columns:repeat(2,1fr);
-    gap:12px;max-width:500px;margin:0 auto;
-  }
-  .profile-item{
-    background:var(--card);border-radius:10px;padding:14px 16px;
-    border-left:3px solid var(--purple);
-  }
+  .profile-section{background:var(--dark);padding:36px 20px;border-bottom:1px solid rgba(124,58,237,0.3);}
+  .profile-title{font-family:"Bebas Neue",sans-serif;font-size:clamp(22px,6vw,36px);letter-spacing:6px;color:var(--purple-light);text-align:center;margin-bottom:20px;}
+  .profile-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;max-width:500px;margin:0 auto;}
+  .profile-item{background:var(--card);border-radius:10px;padding:14px 16px;border-left:3px solid var(--purple);}
   .profile-item.full{grid-column:1/-1;}
   .profile-label{font-size:9px;font-weight:700;letter-spacing:3px;color:var(--purple-light);text-transform:uppercase;margin-bottom:4px;}
   .profile-value{font-size:14px;font-weight:600;color:var(--white);}
@@ -164,34 +145,13 @@
 <section class="profile-section">
   <div class="profile-title">PERFIL DE LA CLIENTA</div>
   <div class="profile-grid">
-    <div class="profile-item full">
-      <div class="profile-label">Nombre</div>
-      <div class="profile-value">Jenny Alexandra Ruales Benavides</div>
-    </div>
-    <div class="profile-item">
-      <div class="profile-label">Edad</div>
-      <div class="profile-value">34 años</div>
-    </div>
-    <div class="profile-item">
-      <div class="profile-label">Peso</div>
-      <div class="profile-value">80 kg</div>
-    </div>
-    <div class="profile-item">
-      <div class="profile-label">Estatura</div>
-      <div class="profile-value">1.60 m</div>
-    </div>
-    <div class="profile-item">
-      <div class="profile-label">Ocupación</div>
-      <div class="profile-value">Conserje</div>
-    </div>
-    <div class="profile-item">
-      <div class="profile-label">Cirugía</div>
-      <div class="profile-value">Pomeroy</div>
-    </div>
-    <div class="profile-item full">
-      <div class="profile-label">Objetivo</div>
-      <div class="profile-value">🎯 Bajar de peso</div>
-    </div>
+    <div class="profile-item full"><div class="profile-label">Nombre</div><div class="profile-value">Jenny Alexandra Ruales Benavides</div></div>
+    <div class="profile-item"><div class="profile-label">Edad</div><div class="profile-value">34 años</div></div>
+    <div class="profile-item"><div class="profile-label">Peso</div><div class="profile-value">80 kg</div></div>
+    <div class="profile-item"><div class="profile-label">Estatura</div><div class="profile-value">1.60 m</div></div>
+    <div class="profile-item"><div class="profile-label">Ocupación</div><div class="profile-value">Conserje</div></div>
+    <div class="profile-item"><div class="profile-label">Cirugía</div><div class="profile-value">Pomeroy</div></div>
+    <div class="profile-item full"><div class="profile-label">Objetivo</div><div class="profile-value">🎯 Bajar de peso</div></div>
   </div>
 </section>
 
@@ -288,7 +248,7 @@
   </div>
 </section>
 
-<!-- MARKET -->
+<!-- MARKET - SOLO UNA VEZ -->
 <section class="market-section">
   <div class="market-box">
     <div class="market-icon">🛒</div>
@@ -339,19 +299,11 @@
   </div>
 </section>
 
-<!-- MARKET -->
-<section class="market-section">
-  <div class="market-box">
-    <div class="market-icon">🛒</div>
-    <div class="market-text">Puedes encontrar todos estos productos en <strong>Ara, D1</strong> y supermercados de barrio.<br>La carne la consigues en tu <strong>carnicería de confianza</strong>.</div>
-  </div>
-</section>
-
 <!-- FOOTER -->
 <footer>
   <div class="footer-brand">KAREN<span>GUZMAN</span>.FIT</div>
   <div class="divider" style="margin:12px auto"></div>
-  <div class="footer-sub">Plan personalizado · Jenny Ruales · 2025</div>
+  <div class="footer-sub">Plan personalizado · Jenny Ruales · 2026</div>
 </footer>
 
 <script>
